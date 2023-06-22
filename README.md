@@ -26,6 +26,10 @@ This Bash script is designed to manage a main folder with subdirectories. It che
 4. The script will check for duplicate filenames within the main folder and display them if any are found. It will then move all files from the subdirectories to the main folder. Empty subdirectories will also be deleted.
 
    **Note:** Please make sure to have a backup of your data before running the script to avoid accidental data loss.
+   
+## License
+
+This script is licensed under the MIT License. For more information, please see the LICENSE file.
 
 ## Contributors
 
