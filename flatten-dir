@@ -1,6 +1,11 @@
 #!/bin/bash
 
-main_folder="/pfad/zum/hauptordner"
+main_folder="$1"
+
+if [ -z "$main_folder" ]; then
+    echo "Bitte geben Sie den Hauptordner als Argument an."
+    exit 1
+fi
 
 # Überprüfen auf doppelte Dateinamen
 duplicates=$(find "$main_folder" -type f -printf "%f\n" | sort | uniq -d)
